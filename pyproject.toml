@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "guide-to-pyqt6"
+version = "0.1.0"
+description = ""
+authors = ["Hundredvisionsguy <winikkc@hsd.k12.or.us>"]
+readme = "README.md"
+packages = [{include = "guide_to_pyqt6"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyqt6 = "^6.7.0"
+ruff = "^0.4.2"
+pytest = "^8.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
