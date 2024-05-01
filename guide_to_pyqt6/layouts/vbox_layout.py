@@ -4,7 +4,7 @@ by HundredVisionsGuy
 A simple VBox Layout - with some standard widgets
 """
 import sys
-from PyQt6.QtGui import QFont, QFontDatabase
+from PyQt6.QtGui import QFont
 from PyQt6.QtWidgets import (
     QApplication,
     QLabel,
@@ -42,4 +42,4 @@ if __name__ == "__main__":
     window = MainWindow()
     window.show()
 
-app.exec()
+    app.exec()
