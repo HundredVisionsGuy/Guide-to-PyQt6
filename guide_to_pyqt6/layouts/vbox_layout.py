@@ -37,10 +37,19 @@ class MainWindow(QMainWindow):
         name_input = QLineEdit()
         name_input.setPlaceholderText("Your Name:")
 
+        # Push Button widget
+        button = QPushButton("Click me!")
+
+        # An output label
+        output_label = QLabel("The output for your button would go here.")
+        output_label.setFont(QFont("Calibri", 14, 400))
+
         # add widgets & layouts to main layout
         layout.addWidget(title_label)
         layout.addWidget(tagline_label)
-        # layout.addWidget(name_input)
+        layout.addWidget(name_input)
+        layout.addWidget(button)
+        layout.addWidget(output_label)
 
         # Push contents to the top
         layout.addStretch()
