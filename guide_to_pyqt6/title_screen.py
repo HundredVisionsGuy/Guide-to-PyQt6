@@ -128,7 +128,8 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
-        main_title = QLabel("Intro: Getting Started!")
+        main_title = QLabel("Layouts: The QVBox Layout")
+        main_title.setContentsMargins(5, 5, 25, 5)
         main_title.setFont(QFont("Titillium Web", 46, 600))
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
