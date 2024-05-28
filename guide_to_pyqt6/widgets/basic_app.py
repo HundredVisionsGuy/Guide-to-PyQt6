@@ -25,7 +25,7 @@ class MainWindow(QMainWindow):
         self.resize(320, 240)
 
         layout = QVBoxLayout()
-        title_label = QLabel("Basic App")
+        title_label = QLabel("Basic App: a simple greeting app.")
 
         # TODO: add a text input for user's name
 
@@ -34,7 +34,7 @@ class MainWindow(QMainWindow):
         # TODO: add a label to greet user
 
         """
-        Challenges: 
+        Challenges:
             * Add another text input (last name, home town, etc.)
             * Add a clear button that, when clicked will 
                 - clear the text in the name input
