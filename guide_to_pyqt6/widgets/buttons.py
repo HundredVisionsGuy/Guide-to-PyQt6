@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
         button = QPushButton("Click me!")
 
         """
-        Challenge: Add a clear button that, when clicked will 
+        Challenge: Add a clear button that, when clicked will
             1. clear the text in the name input
             2. reset the output text to its initial value
         """
