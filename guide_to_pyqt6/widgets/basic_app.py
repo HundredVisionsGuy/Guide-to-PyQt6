@@ -1,14 +1,16 @@
 """
-all_the_labels.py
+the_basics.py
 by HundredVisionsGuy
-A demo of all the stuff you can do with labels (and icons and font styling)
+A demo of the most basic input/output: labels, text inputs, and buttons.
 """
 
 import sys
 from PyQt6.QtWidgets import (
     QApplication,
     QLabel,
+    QLineEdit,
     QMainWindow,
+    QPushButton,
     QVBoxLayout,
     QWidget,
 )
@@ -18,12 +20,18 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Window Title")
+        self.setWindowTitle("Basic App")
         self.setContentsMargins(12, 12, 12, 12)
         self.resize(320, 240)
 
         layout = QVBoxLayout()
-        title_label = QLabel("Title Label (Make this bigger, please!)")
+        title_label = QLabel("Basic App")
+
+        # TODO: add a text input for user's name
+
+        # TODO: add a push button to greet user
+
+        # TODO: add a label to greet user
 
         # add widgets & layouts to main layout
         layout.addWidget(title_label)
