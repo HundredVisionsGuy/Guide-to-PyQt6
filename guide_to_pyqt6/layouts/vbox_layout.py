@@ -25,10 +25,20 @@ class MainWindow(QMainWindow):
         self.resize(320, 240)
 
         layout = QVBoxLayout()
+
+        # create our widgets
         title_label = QLabel("Simple VBox Layout!")
 
-        # add widgets & layouts to main layout
+        # TODO: add a text input
+
+        # TODO: add a push button
+
+        # TODO: add another label
+
+        # TODO: add widgets & layouts to main layout
         layout.addWidget(title_label)
+
+        # TODO: move your content up
 
         widget = QWidget()
         widget.setLayout(layout)
