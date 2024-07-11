@@ -107,7 +107,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("A Semi-complete Guide to PyQt6")
-        self.resize(700, 280)
+        self.resize(650, 400)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         central_widget = QWidget()
@@ -130,15 +130,19 @@ class MainWindow(QMainWindow):
         # Set Series Title
         main_title = QLabel("A Basic App")
         main_title.setContentsMargins(5, 5, 25, 5)
-        main_title.setFont(QFont("Titillium Web", 46, 600))
+        main_title.setFont(QFont("Titillium Web", 40, 600))
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
 
         more_text = "How to get text input from the user "
-        more_text += "and display it on the screen."
+        more_text += "and display it on the screen. Using...\n"
+        more_text += "  ‣ QVBoxLayout\n  ‣ QHBoxLayout\n  ‣ QLabels"
+        more_text += "\n  ‣ QLineEdits\n  ‣ QPushButtons"
+
         more_label = QLabel(more_text)
         more_label.setContentsMargins(5, 5, 25, 15)
-        more_label.setFont(QFont("Titillium Web", 24, 400))
+        more_label.setMinimumHeight(300)
+        more_label.setFont(QFont("Titillium Web", 20, 400))
         more_label.setStyleSheet("color: #efefff;")
         more_label.setWordWrap(True)
 
