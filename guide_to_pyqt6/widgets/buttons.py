@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("A Semi-complete Guide to PyQt6!")
         self.setContentsMargins(12, 12, 12, 12)
-        self.resize(320, 240)
+        self.resize(320, 340)
 
         # Create main layout
         layout = QVBoxLayout()
@@ -33,30 +33,47 @@ class MainWindow(QMainWindow):
         tagline_label = QLabel("Intro: Project Setup!")
         tagline_label.setFont(QFont("Calibri", 18, 400, True))
 
+        # Challenge Label
+        challenge = "<b>Challenge</b>: can you program the button to "
+        challenge += "get the name from the name label and display it "
+        challenge += "on the output label?"
+        extra_challenge = "<b>Extra Challenge</b>: can you add a clear "
+        extra_challenge += "button that when clicked removes "
+        extra_challenge += "the text from the name input and sets the"
+        extra_challenge += " output label back to the initial message?"
+        challenge_label = QLabel(challenge)
+        challenge_label.setWordWrap(True)
+        extra_challenge_label = QLabel(extra_challenge)
+        extra_challenge_label.setWordWrap(True)
+
         # Name input widget
-        self.name_input = QLineEdit()
-        self.name_input.setPlaceholderText("Your Name:")
+        # TODO: make name_input an instance variable
+        name_input = QLineEdit()
+        name_input.setPlaceholderText("Your Name:")
 
         # Push Button widget
+        # TODO: attach a click signal
         button = QPushButton("Click me!")
-        button.clicked.connect(self.get_name)
 
         """
-        Challenge: Add a clear button that, when clicked will 
+        Challenge: Add a clear button that, when clicked will
             1. clear the text in the name input
             2. reset the output text to its initial value
         """
 
         # An output label
-        self.output_label = QLabel("The output for your button would go here.")
-        self.output_label.setFont(QFont("Calibri", 14, 400))
+        # TODO: make output_label an instance variable
+        output_label = QLabel("The output for your button would go here.")
+        output_label.setFont(QFont("Calibri", 14, 400))
 
         # add widgets & layouts to main layout
         layout.addWidget(title_label)
         layout.addWidget(tagline_label)
-        layout.addWidget(self.name_input)
+        layout.addWidget(challenge_label)
+        layout.addWidget(extra_challenge_label)
+        layout.addWidget(name_input)
         layout.addWidget(button)
-        layout.addWidget(self.output_label)
+        layout.addWidget(output_label)
 
         # Push contents to the top
         layout.addStretch()
@@ -67,10 +84,13 @@ class MainWindow(QMainWindow):
         # Set the central widget of the Window.
         self.setCentralWidget(widget)
 
-    def get_name(self):
-        name = self.name_input.text()
-        output = f"You entered {name}!"
-        self.output_label.setText(output)
+    """
+    TODO:
+        1. create a custom slot named get_name
+        2. make sure it's an instance method
+        3. grab the text from the input widget
+        4. display that text on the output label
+    """
 
 
 if __name__ == "__main__":
