@@ -44,7 +44,13 @@ class MainWindow(QMainWindow):
         output_label = QLabel("The output for your button would go here.")
         output_label.setFont(QFont("Calibri", 14, 400))
 
-        # add widgets & layouts to main layout
+        # TODO: add a text input
+
+        # TODO: add a push button
+
+        # TODO: add another label
+
+        # TODO: add widgets & layouts to main layout
         layout.addWidget(title_label)
         layout.addWidget(tagline_label)
         layout.addWidget(name_input)
