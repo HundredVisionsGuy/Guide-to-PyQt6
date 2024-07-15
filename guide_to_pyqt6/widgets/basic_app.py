@@ -12,7 +12,6 @@ from PyQt6.QtWidgets import (
     QMainWindow,
     QPushButton,
     QHBoxLayout,
-    QHBoxLayout,
     QVBoxLayout,
     QWidget,
 )

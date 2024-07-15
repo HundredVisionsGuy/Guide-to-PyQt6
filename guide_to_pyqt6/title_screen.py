@@ -128,16 +128,16 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
-        main_title = QLabel("A Basic App")
+        main_title = QLabel("Getting Numbers with Spinboxes")
         main_title.setContentsMargins(5, 5, 25, 5)
         main_title.setFont(QFont("Titillium Web", 40, 600))
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
 
-        more_text = "How to get text input from the user "
+        more_text = "How to get numeric input from the user "
         more_text += "and display it on the screen. Using...\n"
-        more_text += "  ‣ QVBoxLayout\n  ‣ QHBoxLayout\n  ‣ QLabels"
-        more_text += "\n  ‣ QLineEdits\n  ‣ QPushButtons"
+        more_text += "  ‣ QSpinBoxes\n  ‣ QDoubleSpinBoxes\n  ‣ Plus "
+        more_text += "all the usual suspects."
 
         more_label = QLabel(more_text)
         more_label.setContentsMargins(5, 5, 25, 15)
