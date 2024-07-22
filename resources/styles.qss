@@ -1,0 +1,17 @@
+#MainContainer {
+    background-color: #201E43;
+}
+QLabel {
+    color: #eeeeee;
+    padding: 5px;
+    font-size: 12px;
+}
+#title {
+    font-size: 24px;
+    padding: 5px;
+}
+QPushButton {
+    background-color: #508C9B;
+    color: #ffffff;
+    font-size: 18px;
+}
