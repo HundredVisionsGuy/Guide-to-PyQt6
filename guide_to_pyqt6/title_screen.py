@@ -107,7 +107,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("A Semi-complete Guide to PyQt6")
-        self.resize(650, 400)
+        self.resize(550, 250)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         central_widget = QWidget()
@@ -128,35 +128,32 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
-        main_title = QLabel("Get Numeric Input with SpinBoxes")
+        main_title = QLabel("Adding Style")
         main_title.setContentsMargins(5, 5, 25, 5)
         main_title.setFont(QFont("Titillium Web", 40, 600))
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
 
-        more_text = "How to get numeric input in the form of "
-        more_text += "whole numbers (ints) and decimal numbers (floats) "
-        more_text += "Using...\n  ‣ QSpinBoxes\n  ‣ QDoubleSpinBoxes"
-        more_text += "\n  ‣ and the usual suspects"
+        more_text = "How to add style to your apps by changing "
+        more_text += "colors, fonts, and font sizes."
 
         more_label = QLabel(more_text)
         more_label.setContentsMargins(5, 5, 25, 15)
-        more_label.setMinimumHeight(300)
+        more_label.setMinimumHeight(100)
         more_label.setFont(QFont("Titillium Web", 20, 400))
         more_label.setStyleSheet("color: #efefff;")
         more_label.setWordWrap(True)
 
         work_space_layout.addWidget(main_title)
         work_space_layout.addWidget(more_label)
-        # work_space_layout.addWidget(video_title)
 
-        centra_widget_layout = QVBoxLayout()
-        centra_widget_layout.setContentsMargins(0, 0, 0, 0)
-        centra_widget_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
-        centra_widget_layout.addWidget(self.title_bar)
-        centra_widget_layout.addLayout(work_space_layout)
+        central_widget_layout = QVBoxLayout()
+        central_widget_layout.setContentsMargins(0, 0, 0, 0)
+        central_widget_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+        central_widget_layout.addWidget(self.title_bar)
+        central_widget_layout.addLayout(work_space_layout)
 
-        central_widget.setLayout(centra_widget_layout)
+        central_widget.setLayout(central_widget_layout)
         self.setCentralWidget(central_widget)
 
     def changeEvent(self, event):
@@ -210,6 +207,24 @@ class MainWindow(QMainWindow):
 
 def add_drop_shadow(label: QLabel, radius: int,
                     color: str, x_off: int, y_off: int) -> None:
+    """adds a drop shadow to a QLabel.
+
+    Don't forget to import QGraphicsDropShadowEffect from PyQt6.QtWidgets.
+
+    Usage:
+    Call the function by itself and pass it the label and style:
+    Example: add_drop_shadow(my_label, 5, "black", 5, 5) will add a
+    5px black shadow to the label 5 pixels to the right and 5 pixels
+    down.
+
+    Args:
+        label: the QLabel you want to add the drop shadow to.
+        radius: the size of the shadow.
+        color: the color of the shadow as a string (keyword or as hex code).
+        x_off: the x-offset. A positive integer is to the right and negative
+            is to the left.
+        y_off: the y-offset. A positive integer is down and negative up.
+    """
     shadow = QGraphicsDropShadowEffect()
     shadow.setBlurRadius(radius)
     shadow.setColor(QColor(color))
