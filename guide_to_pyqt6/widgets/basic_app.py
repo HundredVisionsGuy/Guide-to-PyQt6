@@ -36,7 +36,7 @@ class MainWindow(QMainWindow):
         """
         Challenges:
             * Add another text input (last name, home town, etc.)
-            * Add a clear button that, when clicked will 
+            * Add a clear button that, when clicked will
                 - clear the text in the name input
                 - reset the output text to its initial value
         """

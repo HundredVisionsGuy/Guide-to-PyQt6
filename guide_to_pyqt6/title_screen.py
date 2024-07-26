@@ -128,14 +128,14 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
-        main_title = QLabel("Adding Style")
+        main_title = QLabel("Combo Boxes")
         main_title.setContentsMargins(5, 5, 25, 5)
         main_title.setFont(QFont("Titillium Web", 40, 600))
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
 
-        more_text = "How to add style to your apps by changing "
-        more_text += "colors, fonts, and font sizes."
+        more_text = "Code a combo box with icons and "
+        more_text += "add some functionality."
 
         more_label = QLabel(more_text)
         more_label.setContentsMargins(5, 5, 25, 15)
