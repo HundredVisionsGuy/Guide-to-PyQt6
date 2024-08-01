@@ -24,8 +24,8 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Window Title")
-        self.resize(320, 240)
+        self.setWindowTitle("Tip Calculator")
+        self.resize(600, 400)
 
         layout = QVBoxLayout()
 
@@ -35,7 +35,8 @@ class MainWindow(QMainWindow):
         # TODO: make your title text nice and large and modify the color
         title_text = "Tip Calculator"
         title_label = QLabel(title_text)
-        title_label.setFont(QFont("Bebas Neue", 20, 800))
+        title_font = QFont("Bebas Neue", 20, 800)
+        title_label.setFont(title_font)
         title_label.setObjectName("title")
 
         # Order Amount
@@ -149,5 +150,7 @@ if __name__ == "__main__":
     app.setStyleSheet(stylesheet)
     window = MainWindow()
     window.show()
-
+    print(window.instructions)
+    window.instructions
+    window.tip_input.value()
     app.exec()

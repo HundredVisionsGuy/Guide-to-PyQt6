@@ -107,7 +107,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("A Semi-complete Guide to PyQt6")
-        self.resize(550, 250)
+        self.resize(720, 420)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         central_widget = QWidget()
@@ -128,19 +128,20 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
-        main_title = QLabel("Combo Boxes")
+        main_title = QLabel("Object Oriented Programming")
         main_title.setContentsMargins(5, 5, 25, 5)
-        main_title.setFont(QFont("Titillium Web", 40, 600))
+        main_title.setFont(QFont("Titillium Web", 46, 600))
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
 
-        more_text = "Code a combo box with icons and "
-        more_text += "add some functionality."
+        more_text = "A brief primer on OOP (Object-Oriented "
+        more_text += "Programming) through PyQt6 apps. Classes,"
+        more_text += " Objects, Attributes, Methods, and Inheritance."
 
         more_label = QLabel(more_text)
         more_label.setContentsMargins(5, 5, 25, 15)
         more_label.setMinimumHeight(100)
-        more_label.setFont(QFont("Titillium Web", 20, 400))
+        more_label.setFont(QFont("Titillium Web", 30, 400))
         more_label.setStyleSheet("color: #efefff;")
         more_label.setWordWrap(True)
 
