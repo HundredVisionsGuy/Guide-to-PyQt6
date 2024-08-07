@@ -108,7 +108,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         window_title = "SuperQuest: Modern App Design with Python and PyQt6"
         self.setWindowTitle(window_title)
-        self.resize(550, 250)
+        self.resize(800, 300)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         central_widget = QWidget()
@@ -135,12 +135,15 @@ class MainWindow(QMainWindow):
         main_title_styles = "color: #fff;"
         main_title.setStyleSheet(main_title_styles)
 
-        more_text = "Code a combo box with icons and "
-        more_text += "add some functionality."
+        more_text = " ‣ Introductions: Please write your name, organization, role\n"
+        more_text += "    in the chat in case you haven't yet.\n"
+        more_text += " ‣ PyQt6 Overview (why and how I use it)\n"
+        more_text += " ‣ Let me know what you want to do on Socrative\n"
+        more_text += " ‣ The rest depends on you..."
 
         more_label = QLabel(more_text)
         more_label.setContentsMargins(5, 5, 25, 15)
-        more_label.setMinimumHeight(100)
+        more_label.setMinimumHeight(250)
         more_label.setFont(QFont("Titillium Web", 20, 400))
         more_label.setStyleSheet("color: #efefff;")
         more_label.setWordWrap(True)
