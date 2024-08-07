@@ -106,7 +106,8 @@ class CustomTitleBar(QWidget):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("A Semi-complete Guide to PyQt6")
+        window_title = "SuperQuest: Modern App Design with Python and PyQt6"
+        self.setWindowTitle(window_title)
         self.resize(550, 250)
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
@@ -128,7 +129,7 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
-        main_title = QLabel("Combo Boxes")
+        main_title = QLabel("Workshop Agenda")
         main_title.setContentsMargins(5, 5, 25, 5)
         main_title.setFont(QFont("Titillium Web", 40, 600))
         main_title_styles = "color: #fff;"
