@@ -1,7 +1,7 @@
 """
-basic_app.py
+form_layouts.py
 by HundredVisionsGuy
-A demo of the most basic input/output: labels, text inputs, and buttons.
+A demo of a New User type form using the QFormLayout.
 """
 
 import sys
@@ -35,8 +35,8 @@ class MainWindow(QMainWindow):
 
         # TODO: make an input to get the user's email
 
-        # TODO: make an input to get the user's password 
-            # (make it so you cannot see the text)
+        # TODO: make an input to get the user's password
+        # (make it so you cannot see the text)
 
         # TODO: make an input to confirm the user's password
 
