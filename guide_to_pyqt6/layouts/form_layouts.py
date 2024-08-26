@@ -113,8 +113,10 @@ class MainWindow(QMainWindow):
         username = self.username_input.text()
         email = self.email_input.text()
         password = self.password_input.text()
+        password_confirmation = self.confirm_password_input.text()
 
         # check for validity
+        print(password == password_confirmation)
 
         # display results
         results = f"Username: {username}, Email: {email}\n"
