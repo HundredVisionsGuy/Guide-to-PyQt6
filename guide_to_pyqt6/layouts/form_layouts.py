@@ -46,19 +46,22 @@ class MainWindow(QMainWindow):
 
         """
         Challenges:
+            * Finish coding the create_user and clear_form methods
             * Style your app
+            * Make a personality quiz (ex: which Hogwarts House are you?)
             * Display a warning if any of the following occurs:
+                - email doesn't match common guidelines for emails
                 - the passwords are not equal
                 - the password does not meet the minimum length requirement
                     (min: 8 characters) - hint: len()
                 - the password does not include a number or symbol:
                     + you could loop through a string of numbers and check
                         that there is at least one match.
+                        Hint: if i in password
                     + you could do the same with symbols.
                     OR
-                    + you could use a regular expression 
+                    + you could use a regular expression
                         https://www.w3schools.com/python/python_regex.asp
-            * Make a personality quiz (ex: which Hogwarts House are you?)
         """
 
         # [OPTIONAL] Add a stretch to move everything up
