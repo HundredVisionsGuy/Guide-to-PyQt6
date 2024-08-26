@@ -107,7 +107,11 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("A Semi-complete Guide to PyQt6")
+<<<<<<< HEAD
         self.resize(720, 420)
+=======
+        self.resize(960, 370)
+>>>>>>> main
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         central_widget = QWidget()
@@ -128,6 +132,7 @@ class MainWindow(QMainWindow):
         work_space_layout.setContentsMargins(30, 5, 11, 11)
 
         # Set Series Title
+<<<<<<< HEAD
         main_title = QLabel("Object Oriented Programming")
         main_title.setContentsMargins(5, 5, 25, 5)
         main_title.setFont(QFont("Titillium Web", 46, 600))
@@ -142,6 +147,21 @@ class MainWindow(QMainWindow):
         more_label.setContentsMargins(5, 5, 25, 15)
         more_label.setMinimumHeight(100)
         more_label.setFont(QFont("Titillium Web", 30, 400))
+=======
+        main_title = QLabel("Form Layouts")
+        main_title.setContentsMargins(5, 5, 25, 5)
+        main_title.setFont(QFont("Titillium Web", 56, 600))
+        main_title_styles = "color: #fff;"
+        main_title.setStyleSheet(main_title_styles)
+
+        more_text = "Create a new user form using the QFormLayout and "
+        more_text += "add some functionality."
+
+        more_label = QLabel(more_text)
+        more_label.setContentsMargins(5, 5, 25, 15)
+        more_label.setMinimumHeight(17)
+        more_label.setFont(QFont("Titillium Web", 36, 400))
+>>>>>>> main
         more_label.setStyleSheet("color: #efefff;")
         more_label.setWordWrap(True)
 
